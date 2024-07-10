@@ -1,0 +1,91 @@
+<!--
+* content will comes up over the image. It won´t scroll'
+* <h1 class="(...)" id="typing-text"> I put an id on h1 besause
+I will grab it on JS to make a typing effect. 
+* background-attachment: fixed;
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/font-awesome.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/lightbox.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Brad Traversy | Web Developer</title>
+  </head>
+  <body>
+    <header class="header vh-100 text-center position-relative">
+      <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"> <!--h-100 = 100% of the container height (vh-100)-->
+        <h5 class="text-primary fs-3 fw-bold text-uppercase">Hello World</h5>
+        <h1 class="display-1 fw-bold text-white" id="typing-text"></h1>
+        <p class="roles text-white text-uppercase fs-4">
+          <span>Front-End Developer</span>
+          <span>Graduating Soon</span>
+        </p>
+
+        <a href="#about" class="btn btn-outline-light btn-lg mt-3">
+          <div class="d-flex"><!--little chrevon icon-->
+            <div class="me-3"><!--put some space between the chevron (arco p/ baixo) and the text-->
+              <i class="fas fa-chevron-down"></i>
+            </div><!--me-3-->
+            <div class="text-start">
+              <span>More About Me</span>
+            </div>
+          </div><!--.d-flex-->
+        </a>
+
+        <div class="social d-flex gap-3 position-absolute">
+          <a href="#">
+            <i class="fab fa-linkedin fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-youtube fa-3x text-white"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-github fa-3x text-white"></i>
+          </a>
+        </div>
+      </div><!--text-container--> 
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about bg-light py-5">
+      <div class="container">
+        <div class="text-center">
+          <h4 class="text-uppercase fw-bold text-primary">About Me</h4>
+          <hr class="w-25 mx-auto" /><!--<hr> = horizontal rule-->
+          <h2 class="mb-4">Let me introduce myself.</h2>
+        </div>
+        <div class="about-content d-flex gap-5 align-items-center h-100">
+          <!--If the image is not square, it will be oval-->
+          <img src="images/me.jpg" alt="" class="about-img img-fluid rounded-circle"/>
+          <p class="lead">
+            I am about to graduate in Computer Programming and Analysis from Fanshawe College.
+            I have been focusing my studies on front-end web development. I am eager to learn
+            new things and constantly strive to go beyond the topics covered in the classroom. 
+            To further my knowledge in web development, I engage in self-study and participate
+            in additional courses on Udemy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

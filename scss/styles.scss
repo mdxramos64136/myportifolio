@@ -1,0 +1,49 @@
+.header{
+    background: #151515 url('../images/intro-bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+//overlay
+.header::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7); // it will set the brightness of overlay.
+}
+
+.header .text-container{
+    z-index: 10; // Text-container will be infront of the overlay. the bigger the opacity, the darker the background gets
+}
+
+.header .roles{
+    font-family: 'lora-regula', serif;
+}
+
+.header .social{
+    bottom: 50px;
+}
+
+.about-img {
+    width: 350px; 
+    height: 350px;
+    object-fit: cover; // ensure that the image maintains its proportion within the container
+
+}
+
+@media(max-width: 767px) {
+    .header .social i{
+        font-size: 30px;
+    }
+
+    .header .roles{
+        font-size:18px !important; //because we did use fs-class on that, we will have to override that with !important
+    }
+
+    .about-content {
+        flex-direction: column; // On smaller screens, the photo will be above the text - stack
+    }
+}
