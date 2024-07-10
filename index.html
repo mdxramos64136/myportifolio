@@ -3,13 +3,21 @@
 * <h1 class="(...)" id="typing-text"> I put an id on h1 besause
 I will grab it on JS to make a typing effect. 
 * background-attachment: fixed;
+* Font Awesome - check all icons available at https://fontawesome.com/
+* There are also other alternatives, such as https://devicon.dev/:
 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
@@ -18,31 +26,56 @@ I will grab it on JS to make a typing effect.
       href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Poppins:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/font-awesome.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/lightbox.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="css/font-awesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/lightbox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/styles.css"
+    />
     <title>Brad Traversy | Web Developer</title>
   </head>
   <body>
     <header class="header vh-100 text-center position-relative">
-      <div class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"> <!--h-100 = 100% of the container height (vh-100)-->
+      <div
+        class="text-container position-relative d-flex flex-column justify-content-center align-items-center h-100"
+      >
+        <!--h-100 = 100% of the container height (vh-100)-->
         <h5 class="text-primary fs-3 fw-bold text-uppercase">Hello World</h5>
-        <h1 class="display-1 fw-bold text-white" id="typing-text"></h1>
+        <h1
+          class="display-1 fw-bold text-white"
+          id="typing-text"
+        ></h1>
         <p class="roles text-white text-uppercase fs-4">
           <span>Front-End Developer</span>
           <span>Graduating Soon</span>
         </p>
 
-        <a href="#about" class="btn btn-outline-light btn-lg mt-3">
-          <div class="d-flex"><!--little chrevon icon-->
-            <div class="me-3"><!--put some space between the chevron (arco p/ baixo) and the text-->
+        <a
+          href="#about"
+          class="btn btn-outline-light btn-lg mt-3"
+        >
+          <div class="d-flex">
+            <!--little chrevon icon-->
+            <div class="me-3">
+              <!--put some space between the chevron (arco p/ baixo) and the text-->
               <i class="fas fa-chevron-down"></i>
-            </div><!--me-3-->
+            </div>
+            <!--me-3-->
             <div class="text-start">
               <span>More About Me</span>
             </div>
-          </div><!--.d-flex-->
+          </div>
+          <!--.d-flex-->
         </a>
 
         <div class="social d-flex gap-3 position-absolute">
@@ -59,30 +92,151 @@ I will grab it on JS to make a typing effect.
             <i class="fab fa-github fa-3x text-white"></i>
           </a>
         </div>
-      </div><!--text-container--> 
+      </div>
+      <!--text-container-->
     </header>
 
     <!-- About -->
-    <section id="about" class="about bg-light py-5">
+    <section
+      id="about"
+      class="about bg-light py-5"
+    >
       <div class="container">
         <div class="text-center">
           <h4 class="text-uppercase fw-bold text-primary">About Me</h4>
-          <hr class="w-25 mx-auto" /><!--<hr> = horizontal rule-->
+          <hr class="w-25 mx-auto" />
+          <!--<hr> = horizontal rule-->
           <h2 class="mb-4">Let me introduce myself.</h2>
         </div>
         <div class="about-content d-flex gap-5 align-items-center h-100">
           <!--If the image is not square, it will be oval-->
-          <img src="images/me.jpg" alt="" class="about-img img-fluid rounded-circle"/>
+          <img
+            src="images/me.jpg"
+            alt=""
+            class="about-img img-fluid rounded-circle"
+          />
           <p class="lead">
-            I am about to graduate in Computer Programming and Analysis from Fanshawe College.
-            I have been focusing my studies on front-end web development. I am eager to learn
-            new things and constantly strive to go beyond the topics covered in the classroom. 
-            To further my knowledge in web development, I engage in self-study and participate
+            I am about to graduate in Computer Programming and Analysis from
+            Fanshawe College. I have been focusing my studies on front-end web
+            development. I am eager to learn new things and constantly strive to
+            go beyond the topics covered in the classroom. To further my
+            knowledge in web development, I engage in self-study and participate
             in additional courses on Udemy.
           </p>
         </div>
       </div>
     </section>
+
+    <!-- Profile & Skills -->
+    <section class="profile my-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Profile</h3>
+            <p>
+              Here is some more info about myself to help you get to know me
+              better.
+            </p>
+            <ul class="list-group list-group-flush">
+              <!--list-group-flush will take away the outside border-->
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-user text-primary"></i>
+                  Full Name:
+                </h5>
+                <p>Marcel Ramos</p>
+              </li>
+              <!-- <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-calendar text-primary"></i> Birth Date:
+                </h5>
+                <p>August 10, 1981</p>
+              </li> -->
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-building text-primary"></i>
+                  Current Position:
+                </h5>
+                <p>Seeking for the first oportunity</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-home text-primary"></i>
+                  Website:
+                </h5>
+                <p>www.marcelramos.com</p>
+              </li>
+              <li class="list-group-item mb-3">
+                <h5 class="text-transform">
+                  <i class="fas fa-envelope text-primary"></i>
+                  Email:
+                </h5>
+                <p>marcel@gmail.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-uppercase fw-bold">Skills</h3>
+            <p>
+              Here is a list of my skills with these dumb percentages that don't
+              mean anything
+            </p>
+
+            <!--Javascript-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg" 
+            />
+
+            <!--HTML-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+            />
+
+            <!--CSS-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+            />
+
+            <!--Bootstrap-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg"
+            />
+
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-plain-wordmark.svg"
+            />
+
+            <!--SQL-->
+            <img
+              class="icons-size"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"
+            />
+
+        <!--Buttons-->
+        <div class="row mt-5 text-center">
+          <div class="col-12">
+            <a
+              href="#"
+              class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
+            >
+              Hire Me Now
+            </a>
+            <a
+              href="#"
+              class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
+            >
+              Download CV
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Profile and skills-->
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/lightbox-plus-jquery.min.js"></script>
