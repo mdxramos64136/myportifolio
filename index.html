@@ -235,11 +235,79 @@ I will grab it on JS to make a typing effect.
           </div>
         </div>
       </div>
+    </section><!--Profile and skills-->
+    
+    <!--Portfolio-->
+    <section class="portfolio py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h4 class="text-uppercase fw-bold text-primary">
+            Portfolio
+          </h4>
+          <hr class="w-25 mx-auto"/> <!--It´s just a line-->
+          <h2 class="mb-4">Check Out My Work</h2>
+          <p class="lead">Here is a small sample of my projects</p>
+        </div><!--text-center mb-5-->
+        <div class="row">
+          <div class="col-md-6 mb-4"><!--2 projects/row , (6 columns each one)-->
+            <div class="project shadow-lg rounded-5">
+              <!--Img will have a link around them because it needs to open a lightbox (add data-lightbox prop.)
+              - data-title="Clickboard Landing Page" is the name of the page
+              - data-lightbox="images" will put the projects in the same group (images) and add 
+              arrow <> to navigate among them. If you had put a different name it would have the arrows-->
+              <a href="./images/project1d.jpg" data-lightbox="images" data-title="TubeClass">
+                <img src="./images/project1.jpg" alt="" class="img-fluid rounded-3 img-size"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+          
+          <div class="col-md-6 mb-4"><!--2 projects/row , (6 columns each one)-->
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project2.jpg" data-lightbox="images" data-title="Loop Studios Web Site">
+                <img src="./images/project2.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project3.jpg" data-lightbox="images" data-title="Shortly Website">
+                <img src="./images/project3.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project4.jpg" data-lightbox="images" data-title="Flyo Website">
+                <img src="./images/project4.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project5.jpg" data-lightbox="images" data-title="Bookmark Website">
+                <img src="./images/project5.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+
+          <div class="col-md-6 mb-4">
+            <div class="project shadow-lg rounded-5">
+              <a href="./images/project6.jpg" data-lightbox="images" data-title="Grid Layaout">
+                <img src="./images/project6.jpg" alt="" class="img-fluid rounded-3"><!--Image will also be shown on the page once it gets clicked-->
+              </a>
+            </div>
+          </div><!--col-md-6-->
+        </div><!--row-->
+      </div><!--Container-->
     </section>
-    <!--Profile and skills-->
+
+    
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script> <!--LIGHTBOX-->
     <script src="js/script.js"></script>
   </body>
 </html>

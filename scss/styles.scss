@@ -34,8 +34,20 @@
 
 }
 
+//hover effect on Lightbox (Portfolio section)
+.project:hover{
+    transform: scale(1.05); //scale = name of the effect
+    transition: all 0.5s ease-in-out; // to make it smooth
+    opacity: 0.8; // transparency
+}
+
 .icons-size{
     width: 50px;
+}
+
+.img-size {
+  width: 1891px;
+  height: auto;
 }
 
 @media(max-width: 767px) {
